@@ -26,13 +26,13 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 app.include_router(tasks_router)
 
-if __name__ == "__main__":
-    # if len(sys.argv) == 3:
-    #     ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
-    #     ssl_context.load_cert_chain(sys.argv[1], keyfile=sys.argv[2])
-    #     uvicorn.run(app, host="0.0.0.0", port=80, ssl=ssl_context)
-    # else:
-    uvicorn.run(app, host="0.0.0.0", port=80)
+# if __name__ == "__main__":
+#     # if len(sys.argv) == 3:
+#     #     ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+#     #     ssl_context.load_cert_chain(sys.argv[1], keyfile=sys.argv[2])
+#     #     uvicorn.run(app, host="0.0.0.0", port=80, ssl=ssl_context)
+#     # else:
+#     uvicorn.run(app, host="0.0.0.0", port=80)
 
 
 
